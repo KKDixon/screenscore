@@ -21,7 +21,7 @@ function Dashboard() {
       
       const [scoreData, sessionsData] = await Promise.all([
         getDailyScore(today),
-        getSessions(today, today)
+        getSessions()
       ]);
       
       setDailyScore(scoreData);
