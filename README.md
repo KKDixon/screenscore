@@ -2,7 +2,7 @@
 
 A full-stack web application that evaluates the **quality** of screen time, not just the quantity. Built with Flask (Python) and React (JavaScript).
 
-![ScreenScore Dashboard](screen_score\screenshots\dashboard.png)
+![ScreenScore Dashboard](./screen_score\screenshots\dashboard.png)
 
 ## 🎯 Project Overview
 
@@ -20,13 +20,13 @@ ScreenScore automatically assigns quality scores to screen time based on activit
 ## 📸 Screenshots
 
 ### Categories
-![Dashboard](screen_score\screenshots\categories.png)
+![Dashboard](./screen_score\screenshots\categories.png)
 
 ### Analytics
-![Analytics](screen_score\screenshots\analytics.png)
+![Analytics](./screen_score\screenshots\analytics.png)
 
 ### Sessions Management
-![Sessions](screen_score\screenshots\sessions.png)
+![Sessions](./screen_score\screenshots\sessions.png)
 
 ## 🛠️ Tech Stack
 
