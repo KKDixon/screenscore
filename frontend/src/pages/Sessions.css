@@ -1,0 +1,121 @@
+.sessions-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.sessions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.sessions-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.session-item {
+  transition: transform 0.2s ease;
+}
+
+.session-item:hover {
+  transform: translateY(-2px);
+}
+
+.session-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.session-item-header h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.quality-badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.session-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.session-item-details p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-700);
+}
+
+.session-item-notes {
+  font-style: italic;
+  color: var(--gray-600);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+@media (max-width: 768px) {
+  .sessions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .session-item-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .session-actions {
+    width: 100%;
+  }
+
+  .session-actions button {
+    flex: 1;
+  }
+}
